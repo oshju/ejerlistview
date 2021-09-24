@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ejerlistview.MainPage">
+
+    <StackLayout>
+
+        <Label Text="Departamento" Margin="130,65,50,0" ></Label>
+        
+            <StackLayout Orientation="Horizontal">
+                        <Label Text="deptno" Margin="10,0,0,0"></Label>
+                        
+                        <Entry x:Name="txtdeptno" Text="{Binding txtdeptno}" Margin="10,0,0,0" WidthRequest="200"/>
+
+                        </StackLayout>
+        <StackLayout Orientation="Vertical"/>
+        <StackLayout Orientation="Horizontal">
+                        <Label Text="dnombre" Margin="10,0,0,0"/>   
+                        <Entry x:Name="txtdnombre" Text="{Binding txtdnombre}" Margin="0,0,0,0" WidthRequest="200"/>
+            </StackLayout>
+        <StackLayout Orientation="Vertical"/>
+        <StackLayout Orientation="Horizontal">
+                        <Label Text="localidad" Margin="10,0,0,0"/>   
+                        <Entry x:Name="txtlocalidad" Text="{Binding txtlocalidad}" Margin="0,0,0,0" WidthRequest="200"/>
+            </StackLayout>
+
+        <StackLayout Orientation="Vertical"/>
+        <StackLayout Orientation="Horizontal">
+                        <Label Text="fechaalta" Margin="10,0,0,0"/>   
+                        <Entry x:Name="txtfechaalta" Text="" Margin="0,0,0,0" WidthRequest="200"/>
+            </StackLayout>
+        
+            <Button x:Name="boton" Text="grabar" />
+            <Button x:Name="boton2" Text="consultar" />
+        
+        </StackLayout>
+
+</ContentPage>
+
+
+  
